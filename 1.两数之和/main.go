@@ -1,5 +1,6 @@
 package main
 
+// 哈希表
 func twoSum(nums []int, target int) []int {
 	h := make(map[int]int)
 	for i, v := range nums {
@@ -12,6 +13,7 @@ func twoSum(nums []int, target int) []int {
 	return nil
 }
 
+// 暴力算法
 // func twoSum(nums []int, target int) []int {
 // 	for i, v := range nums {
 // 		for j, m := range nums[i+1:] {
