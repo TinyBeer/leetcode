@@ -31,7 +31,7 @@ func Test_removeDuplicates(t *testing.T) {
 				t.Errorf("removeDuplicates() = %v, want %v", got, tt.exp.k)
 			}
 			for i := 0; i < tt.exp.k; i++ {
-				if tt.args.nums[i] != tt.args.nums[i] {
+				if tt.args.nums[i] != tt.exp.nums[i] {
 					t.Errorf("nums = %v, want %v", tt.exp.nums, tt.exp.nums)
 				}
 			}
