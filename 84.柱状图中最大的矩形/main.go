@@ -12,9 +12,9 @@ func largestRectangleArea(heights []int) int {
 	if n == 0 {
 		return 0
 	}
-	if n == 1 {
-		return heights[0]
-	}
+	// if n == 1 {
+	// 	return heights[0]
+	// }
 
 	left, right := make([]int, n), make([]int, n)
 	for i := 0; i < n; i++ {
