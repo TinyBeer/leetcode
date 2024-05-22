@@ -21,4 +21,6 @@ func preorderTraversal(root *TreeNode) []int {
 		df(tn.Left)
 		df(tn.Right)
 	}
+	df(root)
+	return ans
 }
