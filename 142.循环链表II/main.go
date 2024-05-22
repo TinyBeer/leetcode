@@ -36,7 +36,23 @@ func genList(nums []int, pos int) *ListNode {
 
 // 快慢针
 func detectCycle(head *ListNode) *ListNode {
-
+	f, s := head, head
+	for f != nil {
+		if f.Next == nil {
+			return nil
+		}
+		f = f.Next.Next
+		s = s.Next
+		if f == s {
+			p := head
+			for p != s {
+				p = p.Next
+				s = s.Next
+			}
+			return p
+		}
+	}
+	return nil
 }
 
 // // hash
