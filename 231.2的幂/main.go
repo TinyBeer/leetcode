@@ -7,6 +7,9 @@ package main
 */
 
 func isPowerOfTwo(n int) bool {
+	if n <= 0 {
+		return false
+	}
 	n = n&0x55555555 + n>>1&0x55555555
 	n = n&0x33333333 + n>>2&0x33333333
 	n = n&0x0f0f0f0f + n>>4&0x0f0f0f0f
